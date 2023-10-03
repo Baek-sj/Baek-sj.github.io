@@ -48,5 +48,14 @@
 </div>
 
 <div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p><br><br><br>
+	<p><img src="assets/ori_image.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+		<span class="d-none d-sm-inline mx-1" style="font-size: 1.5em;">Baek sj</span></p>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<ul class="social-media-list">
+		{%- if social.github -%}<li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></li>{%- endif -%}
+		{%- if social.youtube -%}<li><a rel="me" href="https://www.youtube.com/{{ social.youtube | cgi_escape | escape }}" title="{{ social.youtube | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a></li>{%- endif -%}
+	</ul>
 </div>
